@@ -1,12 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Barlow&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap"
+			rel="stylesheet"
+		/>
+		<title>COMP 1950 Website Design and Development</title>
+	</head>
+	<body>
+		<header>
+			<a href="index.html"
+				><img src="images/logo.png" alt="BCIT Logo"
+			/></a>
+
+			<button class="btn-menu"><a href="#">Menu</a></button>
+
+			<nav>
+				<ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Course Overview</a></li>
+					<li><a href="schedule.html">Schedule</a></li>
+					<li><a href="Lessons.html">Lessons</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="wrapper">
+			<main>
+				<div class="welcome-banner">
+                    <h1>Web Design and Development 2</h1>
+                    <img src="" alt="Students in classroom">
+                </div>
+                
+                <section class="section01">
+                    <h2>Course Goals</h2>
+                    <ul>
+                        <li>To gain a deeper understanding of HTML, CSS and advanced topics in web development.</li>
+                        <li>To focus on best practices in web page and web site design.</li>
+                    </ul>
+                </section>
+				
+			</main>
+		</div>
+		<footer>
+			<div class="row footer">
+				<div class="column">
+					<h2>Head Office</h2>
+					<div>
+						555 Seymour St.<br />
+						Vancouver, BC<br />
+						V6B 3H6
+					</div>
+				</div>
+				<div class="column">
+					<p>&copy; 2019 Bookshelf Corp.</p>
+				</div>
+			</div>
+		</footer>
+		<script src="scripts/menu.js"></script>
+	</body>
 </html>
