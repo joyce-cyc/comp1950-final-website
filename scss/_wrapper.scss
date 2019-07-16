@@ -1,8 +1,11 @@
-// Wrapper Styles
+// Wrapper
 
 .wrapper {
-    background-color: white;
     max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+    background-color: $wrapper-bg-color;
+    @include mc;
+}
+
+img {
+    @include mc (0,0,true);
 }

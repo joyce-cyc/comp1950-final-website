@@ -1,0 +1,12 @@
+// Type Styles
+body {
+    font-family: $body-font;
+}
+
+h1, h2, h3, nav a {
+    font-family: $heading-font;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+}

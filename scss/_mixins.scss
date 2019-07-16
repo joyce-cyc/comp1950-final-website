@@ -1,0 +1,51 @@
+//Mixins
+
+//Flatten Mixin
+@mixin flatten($isList: false) {
+    margin: 0;
+    padding: 0;
+    @if($isList == true) {
+        list-style: none;
+    }@else{
+        line-height: 1;
+    }
+    
+}
+
+// A style reset
+
+@mixin link($a: true) {
+    text-decoration: none;
+    color: $text-color-light;
+}
+
+// Centering Mixin
+@mixin mc($t: 0, $b: 0, $img: false) {
+    margin: {
+        top: $t;
+        bottom: $b;
+        left: auto;
+        right: auto;
+    }
+
+    @if($img == true){
+        display: block;
+    }
+}
+
+// Flex Row Mixin
+
+@mixin fr($ac: true) {
+    display: flex;
+    justify-content: space-between;
+    @if($ac == true) {
+        align-items: center;
+    }
+}
+
+// Media Query Mixin
+@mixin mq($w) {
+    @media (max-width: $w){
+        @content;
+    }
+}

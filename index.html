@@ -12,13 +12,13 @@
 
 		<div class="wrapper">	
 		<header>
+			<div class="header-nav">
 			<a href="index.html"
 				><img src="/images/bcit-logo-square.jpg" alt="BCIT Logo"
 			/></a>
 
-			<button class="btn-menu"><a href="#">Menu</a></button>
-
-			<nav>
+			<nav class="navbar">
+				<button class="mobile-nav">☰</button>
 				<ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">Course Overview</a></li>
@@ -27,6 +27,7 @@
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
+			</div>
 		</header>
 		
 			<main>
@@ -81,23 +82,36 @@
         </ul>
     </section>
 				
-			</main>
-		<footer>
-			<div class="row footer">
-				<div class="column">
-					<h3>Burnaby Campus</h3>
+	</main>
+
+	<footer>
+			<div class="row">
+				<div class="one-third column">
+					<h3><a href="index.html">COMP 1950</a></h3>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">Course Overview</a></li>
+						<li><a href="schedule.html">Schedule</a></li>
+						<li><a href="lessons.html">Lessons</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						</ul>
+				</div>
+				<div class="one-third column">
+					<h3 class="bcit-burnaby">BCIT Burnaby Campus</h3>
+					<p><a href="www.bcit.ca">www.bcit.ca</a></p>
 					<p>3700 Willingdon Avenue
 						Burnaby, British Columbia
 						Canada, V5G 3H2
-						Telephone: 604-434-5734
-						Toll-free (Can/US): 1-866-434-1610</p>
-							
+					</p>
 				</div>
-				<div class="column">
-					<p>&copy; 2019 Joyce Cheung & Matt Johan</p>
+				<div class="one-third column">
+					<h3 class="contact">Contact</h3>
+					<p><a href="tel:1-604-434-5734">Telephone: 604-434-5734</a></p>
+					<p><a href="tel:1-866-434-1610">Toll-free (Can/US): 1-866-434-1610</a></p>
 				</div>
 			</div>
 		</footer>
+
 		<script src="scripts/menu.js"></script>
 		<script src="scripts/slideshow.js"></script>
 	</body>

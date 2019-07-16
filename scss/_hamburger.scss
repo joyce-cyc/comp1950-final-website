@@ -1,0 +1,9 @@
+// Hamburger
+.mobile-nav {
+    display: none;
+
+    @include mq($phone-landscape) {
+        display: block;
+        color: $text-color-light;
+    }
+}

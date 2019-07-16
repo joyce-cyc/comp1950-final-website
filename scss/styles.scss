@@ -1,8 +1,18 @@
 // Imports
-@import 'reset';
+
+//Utilities
+@import 'variables';
+@import 'mixins';
+//Resets
+@import 'resets';
+@import 'type';
+// HTML Document
 @import 'body';
 @import 'wrapper';
 @import 'header';
-@import 'main';
 @import 'nav';
 @import 'slideshow';
+@import 'hamburger';
+@import 'main';
+@import 'section';
+@import 'footer';

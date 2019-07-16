@@ -1,13 +1,13 @@
 // Body
 
 body {
-    background-color: grey;
-    font-family: 'Open Sans', sans-serif;
+    background-color: $body-bg-color;
+    font-family: $body-font;
 
     h1,
     h2,
     h3 {
-	    font-family: 'Russo One', sans-serif;
+	    font-family: $heading-font;
 	    text-decoration: none;
     }
 

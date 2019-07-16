@@ -1,0 +1,48 @@
+// Footer
+
+footer {
+
+    background-color: black;
+    color: $text-color-light;
+    padding: $padding;
+    line-height: 2;
+    
+
+
+    .row {
+        display: grid;
+        grid-gap: 30px;
+        max-width: 1020px;
+        margin: 0 auto;
+        padding: $padding;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        justify-items: center;
+        
+    }
+
+    .one-third {
+        
+        ul {
+            @include flatten(true);
+        }
+
+        p {
+            text-align: left;
+        }
+        
+        a {
+            @include link(true);
+
+            #{$hvr} {
+                background-color: $brand-color;
+            
+                }
+            
+        }
+
+    }
+
+    @include mq($tab-portrait) {
+        flex-direction: column;
+    }
+}
