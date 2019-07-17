@@ -2,4 +2,51 @@
 
 section {
     padding: $padding;
+    border: black solid 3px;
+
+
+
+    h3 {
+        color:$brand-color;
+        text-align: center;
+    }
+
+    a {
+        color: $brand-color;
+        text-decoration: underline;
+        font-weight: bold;
+
+
+        #{$hvr} {
+            color: #0296ff;
+        
+            }
+    
+        }
+    
+ 
+}
+
+.class-info {
+    display: grid;
+    grid-gap: 30px;
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: $padding;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+
+
+}
+
+.register-button {
+    padding: 10px 30px;
+    background-color: $brand-color;
+    text-align: center;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
 }

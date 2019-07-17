@@ -20,11 +20,14 @@ p {
 body {
   font-family: "Open Sans", sans-serif; }
 
-h1, h2, h3, nav a {
+h1, h2, h3 {
   font-family: "Russo One", sans-serif; }
 
 h1, h2, h3, p {
   margin-top: 0; }
+
+a {
+  color: #003f6b; }
 
 body {
   background-color: grey;
@@ -148,7 +151,7 @@ nav {
 /* Caption text */
 .text {
   color: black;
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 8px 12px;
   position: absolute;
   bottom: 40%;
@@ -213,7 +216,34 @@ nav {
       color: white; } }
 
 section {
-  padding: 30px; }
+  padding: 30px;
+  border: black solid 3px; }
+  section h3 {
+    color: #003f6b;
+    text-align: center; }
+  section a {
+    color: #003f6b;
+    text-decoration: underline;
+    font-weight: bold; }
+    section a:hover, section a:focus, section a:hover {
+      color: #0296ff; }
+
+.class-info {
+  display: grid;
+  grid-gap: 30px;
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center; }
+
+.register-button {
+  padding: 10px 30px;
+  background-color: #003f6b;
+  text-align: center; }
+  .register-button a {
+    color: white;
+    text-decoration: none; }
 
 footer {
   background-color: black;
