@@ -60,21 +60,26 @@ header {
     margin: 0;
     padding: 0;
     line-height: 1;
-    flex: 3;
     font-size: 3em; }
   header h1 a {
     text-decoration: none;
     color: white; }
-  header nav {
-    flex: 3; }
 
 .header-nav {
   display: flex;
   align-items: center; }
+  .header-nav .logo-link {
+    width: 122px;
+    display: block; }
+  @media (max-width: 41.875em) {
+    .header-nav {
+      justify-content: space-between;
+      flex-wrap: wrap; } }
 
 nav {
   background-color: #003f6b;
-  height: 40px; }
+  height: 40px;
+  flex: 1; }
   nav ul {
     margin: 0;
     padding: 0;
@@ -98,7 +103,10 @@ nav {
       transition: background-color 0.6s ease; }
   @media (max-width: 41.875em) {
     nav {
-      display: none; }
+      display: none;
+      width: 100%;
+      flex: 0 0 auto;
+      height: auto; }
       .show nav {
         display: block; }
       nav a {
@@ -215,9 +223,7 @@ nav {
       color: white;
       border: none;
       background-color: transparent;
-      font-size: 3em;
-      flex-wrap: wrap;
-      flex-basis: 100%; } }
+      font-size: 3em; } }
 
 section {
   padding: 30px;
@@ -277,14 +283,6 @@ section {
   margin: 0;
   border: none; }
 
-/* Submit button */
-.button input {
-  width: 33%;
-  background-color: #003f6b;
-  color: white;
-  font-size: 1em; }
-
-/* Form Styles */
 footer {
   background-color: black;
   color: white;

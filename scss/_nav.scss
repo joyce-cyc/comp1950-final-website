@@ -5,7 +5,7 @@ nav {
     $height: 40px;
     background-color: $brand-color;
     height: $height;
-
+    flex: 1;
 
     ul {
         @include flatten(true);
@@ -41,7 +41,9 @@ nav {
 
     @include mq($phone-landscape) {
         display: none;
-        
+        width: 100%;
+        flex: 0 0 auto;
+        height: auto;
 
         .show & {
             display: block;
