@@ -3,6 +3,7 @@
 section {
     padding: $padding;
     border: black solid 3px;
+    width: 100%;
 
 
 
@@ -27,6 +28,8 @@ section {
  
 }
 
+// Home Page 
+
 .class-info {
     display: grid;
     grid-gap: 30px;
@@ -48,5 +51,147 @@ section {
         color: white;
         text-decoration: none;
     }
+
+}
+
+// Contact Form Page
+
+.contact-form {
+
+    background-color: #fff;
+    border: 10px solid darkgrey;
+    padding: $padding;
+    margin: 0 auto;
+
+    h3 {
+        text-align: left;
+        font-family: $body-font;
+        margin: 0;
+
+    }
+
+    input {
+        background-color:rgb(230, 230, 230);
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        
+      }
+
+    fieldset {
+        border: none;
+
+    }
+
+
     
 }
+
+.entry {
+
+    input {
+        width: 33%;
+    }
+
+    textarea {
+        width: 100%;
+        background-color:rgb(230, 230, 230);
+        padding: 15px;
+        margin: 0;
+        border: none;
+        }
+
+}
+
+/* Submit button */
+.button input {
+    width: 100%;
+    background-color:$brand-color;
+    color: $text-color-light;
+    font-size: 1em;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  
+  /* Form Styles */
+  
+  
+//   fieldset legend {
+//     font-size: 1.2em;
+//     text-transform: uppercase;
+//     letter-spacing: 0.2em;
+//     padding: 20px 0;
+  
+//   }
+  
+//   fieldset legend span {
+//     color: white;
+//     background-color:rgb(157, 223, 228);
+//     border-radius: 50%;
+//     padding: 5px 10px;
+//     font-size: 1.2em;
+  
+//   }
+  
+//   label {
+//   font-size: 0.8em;
+//   padding: 5px 0;
+//   }
+  
+//   .entry label {
+//     font-size: 0.8em;
+//     font-weight: bold;
+//     padding: 5px 0;
+    
+//   }
+  
+  
+  
+//   input:focus {
+//     border: 3px solid rgb(157, 223, 228);
+//     border-radius: 5px;
+//   }
+  
+//   .entry input {
+//     width: 100%;
+//   }
+  
+//   .radio input {
+//     display: inline-block;
+//     margin: 5px 0;
+//     padding: 5px 0;
+//   }
+  
+//   .entry textarea {
+//     width: 100%;
+//     background-color:rgb(230, 230, 230);
+//     padding: 15px;
+//     margin: 10px 0;
+//     border: none;
+//     border-radius: 5px;
+//   }
+  
+//   textarea:focus {
+//     border: 3px solid rgb(157, 223, 228);
+//     border-radius: 5px;
+//   }
+  
+//   select {
+//     width: 100%;
+//     font-size: 0.8em;
+//     color: grey;
+//     background-color:rgb(230, 230, 230);
+//     padding: 25px;
+//     margin: 10px 0;
+//     border: none;
+//     border-radius: 5px;
+  
+//   }
+  
+//   select:focus {
+//     border: 3px solid rgb(157, 223, 228);
+//     border-radius: 5px;
+//   }
+  
+  
+  

@@ -41,6 +41,7 @@ nav {
 
     @include mq($phone-landscape) {
         display: none;
+        
 
         .show & {
             display: block;
