@@ -36,22 +36,22 @@
         <form action="#0" method="post" name="contact-info" class="contact-info" id="contact-info">
         <!-- Name -->
         <div class="entry">
-        <label for="name">First name: </label>
+        <label for="name">First name:* </label>
         <br>
-        <input type="text" id="first-name" name="first-name" required>
+        <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
         </div>
         <br>
         <div class="entry">
-        <label for="name">Last name: </label>
+        <label for="name">Last name:* </label>
         <br>
-        <input type="text" id="last-name" name="last-name" required>
+        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
         </div>
         <br>
         <!-- Email -->
         <div class="entry">
-        <label for="email">Email: </label>
+        <label for="email">Email:* </label>
         <br>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" placeholder="yourname@email.com"required>
         </div>
         <br>
         <!-- Student type -->
@@ -64,11 +64,18 @@
         <label for="current">Current Student</label>
         </div>
         <br>
+        <!-- Student Number -->
+        <div class="entry">
+        <label for="student-number">BCIT ID: </label>
+        <br>
+        <input type="text" id="student-number" name="student-number" placeholder="A0123456789">
+        </div>
+        <br>
         <!-- Comment/Question Area -->
         <div class="entry">
         <label for="message"><h3>Comment or Question:</h3></label>
         <br>
-        <textarea name="message" id="message" cols="30" rows="3">What can we help you with today?</textarea>
+        <textarea name="message" id="message" cols="30" rows="3" placeholder="What can we help you with today?"></textarea>
         </div>
         <br>
         </fieldset>

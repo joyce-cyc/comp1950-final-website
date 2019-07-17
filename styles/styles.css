@@ -252,6 +252,7 @@ section {
 
 .contact-form {
   background-color: #fff;
+  width: 100%;
   border: 10px solid darkgrey;
   padding: 30px;
   margin: 0 auto; }
@@ -262,13 +263,13 @@ section {
   .contact-form input {
     background-color: #e6e6e6;
     padding: 10px;
-    margin: 10px 0;
+    margin: 0;
     border: none; }
   .contact-form fieldset {
     border: none; }
 
 .entry input {
-  width: 33%; }
+  width: 300px; }
 .entry textarea {
   width: 100%;
   background-color: #e6e6e6;
@@ -278,12 +279,10 @@ section {
 
 /* Submit button */
 .button input {
-  width: 100%;
+  width: 33%;
   background-color: #003f6b;
   color: white;
-  font-size: 1em;
-  margin-top: 30px;
-  margin-bottom: 0; }
+  font-size: 1em; }
 
 /* Form Styles */
 footer {

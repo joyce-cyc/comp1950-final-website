@@ -59,6 +59,7 @@ section {
 .contact-form {
 
     background-color: #fff;
+    width: 100%;
     border: 10px solid darkgrey;
     padding: $padding;
     margin: 0 auto;
@@ -73,7 +74,7 @@ section {
     input {
         background-color:rgb(230, 230, 230);
         padding: 10px;
-        margin: 10px 0;
+        margin: 0;
         border: none;
         
       }
@@ -90,7 +91,7 @@ section {
 .entry {
 
     input {
-        width: 33%;
+        width: 300px;
     }
 
     textarea {
@@ -103,14 +104,22 @@ section {
 
 }
 
+.radio {
+    // input {
+    //     display: inline-block;
+    //     margin: 5px 0;
+    //     padding: 5px 0;
+    // }
+        
+        
+}
+
 /* Submit button */
 .button input {
-    width: 100%;
+    width: 33%;
     background-color:$brand-color;
     color: $text-color-light;
     font-size: 1em;
-    margin-top: 30px;
-    margin-bottom: 0;
   }
   
   /* Form Styles */
@@ -175,23 +184,6 @@ section {
 //     border: 3px solid rgb(157, 223, 228);
 //     border-radius: 5px;
 //   }
-  
-//   select {
-//     width: 100%;
-//     font-size: 0.8em;
-//     color: grey;
-//     background-color:rgb(230, 230, 230);
-//     padding: 25px;
-//     margin: 10px 0;
-//     border: none;
-//     border-radius: 5px;
-  
-//   }
-  
-//   select:focus {
-//     border: 3px solid rgb(157, 223, 228);
-//     border-radius: 5px;
-//   }
-  
+
   
   
