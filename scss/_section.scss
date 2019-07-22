@@ -196,11 +196,34 @@ section {
 
 // Contact Form Page
 
+.instructor-info {
+    display: flex;
+    border: none;
+    background-color: lightgrey;
+
+    .contact-info {
+        flex: 1;
+    }
+
+    .instructor {
+        padding: $padding;
+        margin-left: 10px;
+        background-color:white;
+        
+    }
+
+    @include mq($phone-landscape) {
+        flex-direction: column;
+
+    }
+}
+
+
 .contact-form {
 
     background-color: #fff;
     width: 100%;
-    border: 10px solid darkgrey;
+    border: none;
     padding: $padding;
     margin: 0 auto;
 
@@ -232,17 +255,80 @@ section {
 
     input {
         width: 300px;
+
+        @include mq(720px) {
+            width: 100%;
+    
+        }
     }
 
     textarea {
-        width: 100%;
+        width: 85%;
         background-color:rgb(230, 230, 230);
         padding: 15px;
         margin: 0;
         border: none;
+
+        @include mq($tab-portrait) {
+            width: 100%;
+    
         }
+    }
 
 }
 
+
+.name {
+    display: flex;
+
+    .name-entry {
+        flex: 1;
+        padding-right: 10px;
+    }
+
+    @include mq(720px) {
+        flex-direction: column;
+
+        
+    }
+
+}
+
+.contact {
+    display: flex;
+
+    .contact-entry {
+        flex: 1;
+        padding-right: 10px;
+    }
+
+    @include mq(720px) {
+        flex-direction: column;
+
+    }
+}
+
+.button {
+    margin: 15px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: $brand-color;
+    border: none;
+    color: white;
+    padding:20px $padding*3;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: $body-font;
+    text-transform: uppercase;
+    font-size: 1em;
+
+    @include mq($phone-landscape) {
+        width: 100%;
+    
+    }
+
+
+  }
 
 
