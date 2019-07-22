@@ -24,6 +24,11 @@ section {
             }
     
         }
+
+    span {
+        color:$brand-color;
+        font-weight: bold;
+    }
     
  
 }
@@ -50,8 +55,143 @@ section {
     a {
         color: white;
         text-decoration: none;
+        text-transform: uppercase;
     }
 
+}
+
+// About Page
+
+.about {
+    border: none;
+
+}
+
+.about-01 {
+
+    h2 {
+        color:$brand-color;
+    }
+
+    .row {
+        display: grid;
+        grid-gap: 30px;
+        max-width: 1020px;
+        margin: 0 auto;
+        padding: $padding;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        justify-items: left;
+        
+    }
+
+    .one-third {
+
+        p {
+            text-align: left;
+        }
+    }
+
+    @include mq($tab-portrait) {
+        flex-direction: column;
+    }
+
+    .register-button {
+        margin: $padding 0;
+    }
+
+}
+
+.about-02 {
+
+    background-color: $brand-color;
+    
+    h2 {
+        color:white;
+        padding: $padding;
+        padding-bottom: 0;
+    
+    }
+
+    p {
+        padding: $padding;
+        color: white;
+    }
+}
+
+.about-03 {
+
+    h2 {
+        color: $brand-color;
+        padding: $padding;
+        padding-bottom: 0;
+        
+    }
+
+    ul {
+        padding: $padding;
+        margin-left: $padding;
+
+        li {
+            margin: 10px 0;
+            padding: 10px;
+        }
+    }
+}
+
+.about-04 {
+
+    background-color: $brand-color;
+    
+    h2 {
+        color:white;
+        padding: $padding;
+    
+    }
+
+    p {
+        padding: 0 $padding;
+        color: white;
+        font-weight: bold;
+    }
+
+    ul {
+        padding: 0 $padding $padding;
+        margin-left: $padding;
+        
+
+        li {
+            color: white;
+            margin: 10px 0;
+            padding: 5px;
+        }
+    }
+
+}
+
+.about-05 {
+
+    h2 {
+        color: $brand-color;
+        padding: $padding;
+        padding-bottom: 0;
+        text-align: center;
+        
+    }
+
+    table {
+        padding: $padding;
+        margin: 0 auto;
+
+        td {
+          padding: 10px;
+          text-align: left;
+        }
+        
+        tr:last-child {
+            font-weight: bold;
+        }
+
+      }
 }
 
 // Contact Form Page
