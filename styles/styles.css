@@ -232,13 +232,6 @@ nav {
       background-color: transparent;
       font-size: 3em; } }
 
-main a {
-  color: #003f6b;
-  text-decoration: underline;
-  font-weight: bold; }
-  main a:hover, main a:focus, main a:hover {
-    color: #0296ff; }
-
 section {
   padding: 30px;
   border: black solid 3px;
@@ -369,6 +362,13 @@ section {
   padding: 30px;
   text-align: center;
   margin: 0; }
+
+.schedule-bookmarks a {
+  color: #003f6b;
+  text-decoration: underline;
+  font-weight: bold; }
+  .schedule-bookmarks a:hover, .schedule-bookmarks a:focus, .schedule-bookmarks a:hover {
+    color: #0296ff; }
 
 .dropdown {
   display: none; }

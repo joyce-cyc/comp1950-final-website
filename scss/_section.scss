@@ -231,7 +231,23 @@ section {
     margin: 0;
 
     }
+
+}
+
+.schedule-bookmarks {
     
+    a {
+        color: $brand-color;
+        text-decoration: underline;
+        font-weight: bold;
+
+
+        #{$hvr} {
+            color: #0296ff;
+        
+            }
+    
+        }
 }
 // Drop Down Menu code from https://www.w3schools.com/css/css_dropdowns.asp
 .dropdown {
