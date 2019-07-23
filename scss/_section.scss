@@ -39,7 +39,7 @@ section {
     display: grid;
     grid-gap: 30px;
     max-width: 1020px;
-    margin: 0 auto;
+    justify-content: center;
     padding: $padding;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     justify-items: center;
@@ -63,12 +63,6 @@ section {
         width: 100%;
         text-align: center;
 
-        //for selector elements
-        #{$hvr} {
-           background-color: rgba(white, 0.3);
-           transition: background-color 0.6s ease;
-
-        }
     }
 
 }
@@ -90,7 +84,7 @@ section {
         display: grid;
         grid-gap: 30px;
         max-width: 1020px;
-        margin: 0 auto;
+        justify-content: center;
         padding: $padding;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         justify-items: left;
@@ -207,7 +201,7 @@ section {
 
     table {
         padding: $padding;
-        margin: 0 auto;
+        justify-content: center;
 
         td {
           padding: 10px;
