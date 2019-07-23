@@ -232,6 +232,13 @@ nav {
       background-color: transparent;
       font-size: 3em; } }
 
+main a {
+  color: #003f6b;
+  text-decoration: underline;
+  font-weight: bold; }
+  main a:hover, main a:focus, main a:hover {
+    color: #0296ff; }
+
 section {
   padding: 30px;
   border: black solid 3px;
@@ -263,9 +270,18 @@ section {
   background-color: #003f6b;
   text-align: center; }
   .register-button a {
+    font-family: "Open Sans", sans-serif;
     color: white;
+    line-height: 1.4;
+    text-align: center;
     text-decoration: none;
-    text-transform: uppercase; }
+    font-size: 1.2em;
+    outline: none;
+    width: 100%;
+    text-align: center; }
+    .register-button a:hover, .register-button a:focus, .register-button a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      transition: background-color 0.6s ease; }
 
 .about {
   border: none; }
@@ -297,6 +313,15 @@ section {
   .about-02 p {
     padding: 30px;
     color: white; }
+  .about-02 .schedule-btn {
+    margin: 30px;
+    padding: 10px 30px;
+    background-color: white;
+    text-align: center; }
+    .about-02 .schedule-btn a {
+      color: #003f6b;
+      text-decoration: none;
+      text-transform: uppercase; }
 
 .about-03 h2 {
   color: #003f6b;
@@ -339,6 +364,72 @@ section {
     text-align: left; }
   .about-05 table tr:last-child {
     font-weight: bold; }
+
+.schedule-heading h1 {
+  padding: 30px;
+  text-align: center;
+  margin: 0; }
+
+.dropdown {
+  display: none; }
+  @media (max-width: 41.875em) {
+    .dropdown {
+      position: relative;
+      display: inline-block; }
+      .dropdown:hover .dropdown-content {
+        display: block; }
+      .dropdown:hover .dropbtn {
+        background-color: #003e6bda; }
+      .dropdown .dropbtn {
+        background-color: #003f6b;
+        color: white;
+        padding: 16px 30px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer; }
+      .dropdown .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1; }
+        .dropdown .dropdown-content a {
+          font-family: "Open Sans", sans-serif;
+          color: black;
+          line-height: 1.4;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: center; }
+          .dropdown .dropdown-content a:hover, .dropdown .dropdown-content a:focus, .dropdown .dropdown-content a:hover {
+            background-color: #f1f1f1; } }
+
+.schedule-bookmarks {
+  padding: 0 30px 30px;
+  text-align: center; }
+  .schedule-bookmarks a {
+    padding-right: 10px; }
+  @media (max-width: 41.875em) {
+    .schedule-bookmarks {
+      display: none; }
+      .schedule-bookmarks .dropdown {
+        display: block; } }
+
+.day-section {
+  border: none; }
+  .day-section:nth-child(even) {
+    background-color: lightgrey; }
+
+.lesson-btn {
+  padding: 10px 30px;
+  background-color: #003f6b;
+  text-align: center;
+  width: 200px; }
+  .lesson-btn a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase; }
 
 .instructor-info {
   display: flex;
